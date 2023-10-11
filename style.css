@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Poppins', serif;
+    --main-bg: #F2F5F9;
+    --card-bg: #fff;
+    --line-color: rgba(0, 0, 0, 0.1);
+    --primary-text: #111729;
+    --secondary-text: #677489;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    color: var(--secondary-text);
+    background-color: var(--main-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 900px;
+    min-height: 100vh;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 350px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--card-bg);
+}
+
+.card__cover {
+    min-height: 250px;
+    background: url('./assets/img/hero-image-business-card.png') center / cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card__cover img {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-block-end: -1px;
+}
+
+.card__body,
+.card__footer {
+    padding: 2rem;
+}
+
+.card__body {
+    padding-block-start: 0;
+}
+
+.card__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-block-end: 1rem;
+}
+
+
+.card__footer {
+    border-block-start: 1px solid var(--line-color);
+}
+
+.card__user {
+    display: flex;
+    align-items: center;
+}
+
+.card__avatar {
+    width: 40px;
+    height: 40px;
+    border: 5px solid var(--main-bg);
+    border-radius: 50%;
+    margin-inline-end: 1rem;
+}
+
+.card__name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.card__role {
+    font-size: 1.2rem;
+}
